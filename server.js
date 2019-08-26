@@ -55,4 +55,5 @@ server.delete('/users/:index', checkUserInArray, (req, res) => {
     res.json(users);
 })
 
-server.listen(6666);
+var porta = process.env.PORT || 8080;
+server.listen(porta);
